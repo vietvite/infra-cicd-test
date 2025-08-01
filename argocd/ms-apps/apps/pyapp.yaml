@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pyapp
+  namespace: argocd
+spec:
+  project: default
+  sources:
+    - repoURL: https://github.com/vietvite/infra-cicd-test.git
+      chart: pyapp
+      path: argocd/ms-apps/apps/pyapp
+      helm:
+        releaseName: pyapp
+        valueFiles:
+          - $values/argocd/ms-apps/environments/production/pyapp/values.yaml
+    - repoURL: https://github.com/vietvite/infra-cicd-test.git
+      targetRevision: main
+      ref: values
+  destination:
+    name: "in-cluster"
+    namespace: pyapp
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
