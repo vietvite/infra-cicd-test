@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/vietvite/infra-cicd-test.git
     targetRevision: main
-    path: argocd
+    path: argocd/sys-apps
     directory:
       recurse: true
   destination:
