@@ -9,3 +9,14 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 512Mi
+  requests:
+    cpu: 10m
+    memory: 128Mi
+
+service:
+  port: 3000
