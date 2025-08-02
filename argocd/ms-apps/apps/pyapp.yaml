@@ -8,7 +8,6 @@ spec:
   sources:
     - repoURL: https://github.com/vietvite/infra-cicd-test.git
       targetRevision: main
-      chart: pyapp
       path: argocd/ms-apps/charts/pyapp
       helm:
         releaseName: pyapp
