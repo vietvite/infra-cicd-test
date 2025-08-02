@@ -1,3 +1,11 @@
 image:
   repository: 174084228657.dkr.ecr.us-east-1.amazonaws.com/pyapp
   tag: "10e29deced3fc5a042a58f66640d98eb0f3e358e"
+
+ingress:
+  enabled: true
+  hosts:
+    - host: example.local
+      paths:
+        - path: /
+          pathType: Prefix
