@@ -4,7 +4,7 @@ image:
 ingress:
   enabled: true
   hosts:
-    - host: example.local
+    - host: a87bdb64f6b73475e8806f382439b1d4-34798d1562ae7b52.elb.us-east-1.amazonaws.com
       paths:
         - path: /
           pathType: Prefix
