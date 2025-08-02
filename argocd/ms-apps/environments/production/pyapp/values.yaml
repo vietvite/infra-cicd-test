@@ -1,6 +1,6 @@
 image:
   repository: 174084228657.dkr.ecr.us-east-1.amazonaws.com/pyapp
-  tag: "a3fbaa885bfa3daee15d12aface169e1021d8155"
+  tag: "aec840c7b49bbf621afd2c43723eb2a3d2cd0769"
 ingress:
   enabled: true
   hosts:
