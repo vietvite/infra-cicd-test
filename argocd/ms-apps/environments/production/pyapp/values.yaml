@@ -20,3 +20,12 @@ resources:
 
 service:
   port: 3000
+
+livenessProbe:
+  httpGet:
+    path: /healthcheck
+    port: http
+readinessProbe:
+  httpGet:
+    path: /healthcheck
+    port: http
