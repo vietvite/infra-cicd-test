@@ -1,7 +1,6 @@
 image:
   repository: 174084228657.dkr.ecr.us-east-1.amazonaws.com/pyapp
-  tag: "10e29deced3fc5a042a58f66640d98eb0f3e358e"
-
+  tag: "a3fbaa885bfa3daee15d12aface169e1021d8155"
 ingress:
   enabled: true
   hosts:
@@ -9,7 +8,6 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-
 resources:
   limits:
     cpu: 100m
@@ -17,10 +15,8 @@ resources:
   requests:
     cpu: 10m
     memory: 128Mi
-
 service:
   port: 3000
-
 livenessProbe:
   httpGet:
     path: /healthcheck
