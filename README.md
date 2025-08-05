@@ -123,3 +123,4 @@ The Postman request to python application
 
 # References
 - [Demo python application](https://github.com/vietvite/pyapp)
+- [CI pipeline](https://github.com/vietvite/pyapp/blob/main/.github/workflows/ci.yml)
